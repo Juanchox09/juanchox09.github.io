@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --colorRojo: #E20613;
+    --colorNegro:#0d0d0d;
+    --ColorBlanco: #f2f2f2;
+    --texto:'Roboto Condensed';
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-height: 15%;
+    box-shadow: 0px 5px 10px #c4c4c4;
+}
+.imgLogo{
+    width: 60%;
+}
+.listNav{
+    display: flex;
+    flex-direction: row;
+}
+.listItem{
+    text-decoration: none;
+    font-family: var(--texto);
+    margin: 0px 10px 0px 0px;
+    padding: 0px 10px 10px 0px;
+    list-style: none;
+    color: var(--ColorNegro);
+}
+.listItem:hover{
+    color: var(--colorRojo);
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+.bannerPresentation{
+    margin-bottom: 60px;
+ }
+ .banner{
+    display: flex;
+    background-image: url("../IMG/Container1.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.bannerContent{
+    background: rgba(242, 242, 242, 0.8);
+    position: relative;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    margin: 100px 0px 100px 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--texto);
+}
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleProduct{
+    font-family: var(--texto);
+    font-size: 3rem;
+    color: var(--colorRojo);
+    margin-bottom: 30px;
+}
+.productContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.productItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px #c4c4c4;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+    padding: 60px 20px 30px 20px;
+}
+.productImg{
+    width: 100%;
+    height: 100%;
+}
+.textProduct{
+    text-align: center;
+    font-family: var(--texto);
+    color: var(--colorRojo);
+}
+.productItem:hover{
+    color: var(--colorRojo);
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+/*.productItem:not(:first-child) {
+    display: none;
+}*/
+.leftButton {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--colorRojo);
+}
+
+.rightButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--colorRojo);
+}
+
+/*Ubicación*/
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleLocation{
+    font-family: var(--texto);
+    font-size: 3rem;
+    color: var(--colorRojo);
+    margin-bottom: 30px;
+}
+
+
+/*Footer*/
+footer{
+    background: var(--colorRojo);
+    opacity: 0.8;
+}
+
+.footerContact{
+    margin-top: 30px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.phoneAndEmail{
+    margin: 10px 30px;
+    color: var(--ColorBlanco);
+}
+.footerContact{
+    color: var(--ColorBlanco);
+    font-family: var(--texto);
+}
+.phoneFooter, .emailFooter{
+    display: flex;
+    flex-direction: row;
+}
+.phoneFooter > span{
+    width: 100%;
+}
+.footerSocialMedia{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px;
+    font-size: 2rem;
+}
+.footerContact{
+    margin-top: 20px;
+    margin: 0px 10px;   
+}
+.footerSocial:hover{
+    color: var(--ColorBlanco);
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+.whatsappIcon{
+    position: fixed; /* Fija la posición del icono */
+    bottom: 20px; /* Posición desde el borde inferior */
+    right: 20px; /* Posición desde el borde derecho */
+    z-index: 999; /* Asegura que el icono siempre esté visible */
+  
+  
+}
+.pageInfoCopy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--texto);
+    color: var(--ColorBlanco);
+    padding: 30px 0px;
+}
